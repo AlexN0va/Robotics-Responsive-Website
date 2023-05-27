@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>RCHS Robotics</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header class="header">
+
+    <img alt="Robotics Logo " src="images/RoboticsLogo.png">
+
+    <div class="title">
+
+      <h1>RCHS Robotics</h1>
+    </div>
+      <input type="checkbox" id="drawer-toggle">
+      <label for="drawer-toggle" id="drawer-toggle-label"></label>
+      <nav id="drawer">
+          <ul>
+          <li >  <a  href="index.html"> Home</a> </li>
+          <li >  <a  href="events.html"> Events</a> </li>
+          <li >  <a  href="donate.html"> Donate/Sponsors</a> </li>
+          <li >  <a  href="newsletter.html"> Newsletter</a> </li> 
+          <li >  <a  href="handbook.html"> Handbook</a> </li> 
+            <li >  <a  href="about.html"> About</a> </li> 
+          </ul>
+        </nav>
+  </header>
+  <section class="flexcontainer">
+    
+    <aside class="myleft" id="newsletterMyLeft">
+    </aside>
+    <article class="mymiddle" id="newsletterMyMiddle">
+      <p>Rancho Cotate High School Robotics Team is always aprticpating is cool activities. Keep up with what we are
+        doing and learn more about us!</p>
+      <h2>Join our newsletter and get weekly emails! Contact Us!</h2>
+      <form action="https://formspree.io/f/xgebdqbd" method="POST">
+        <!-- fieldset, legend + radio inputs. Since the name is the same you can only pick one value-->
+        <fieldset>
+          <legend>Personal information</legend>
+          <div>
+            <label for="fname">First Name: </label>
+            <input type="text" name="fname" id="fname" size="40" placeholder="Please enter your first name">
+            <br>
+            <br>
+            <label for="lname">Last Name: </label>
+            <input type="text" name="lname" id="lname" size="40" placeholder="Please enter your last name">
+            <br>
+            <br>
+            <label for="email">Email: <span class="req">*</span></label>
+            <input type="email" name="email" id="email" size="40" required placeholder="johndoe@email.com">
+
+          </div>
+          <div>
+            <p>Gender</p>
+            <br>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+          </div>
+          <div>
+            <p>How did you hear of us?</p>
+            <br>
+            <input type="checkbox" id="socialMedia" name="questionnaire" value="social media">
+            <label for="socialMedia"> Social Media</label><br>
+            <input type="checkbox" id="student" name="questionnaire" value="student">
+            <label for="student"> Student</label><br>
+            <input type="checkbox" id="parent" name="questionnaire" value="parent">
+            <label for="parent"> Parent</label><br>
+            <input type="checkbox" id="flyer" name="questionnaire" value="flyer">
+            <label for="flyer"> Flyer</label><br>
+          </div>
+          <div>
+            <p>Would you like to be signed up for the weekly newsletter?</p>
+            <br>
+            <input type="radio" name="signUp" value="yes" checked> Yes<br>
+            <input type="radio" name="signUp" value="no"> No<br>
+          </div>
+          <div>
+            <label for="subteam"> Subteam most interested in <span class="req">*</span></label>
+            <br>
+            <br>
+            <select name="subteam" id="subteam" size="7" required multiple>
+              <option value="" selected>(select something)</option>
+              <optgroup label="Hands-on">
+                <option value="mechanical">Mechanical</option>
+                <option value="electrical">Electrical</option>
+                <option value="repair">Repair</option>
+              </optgroup>
+              <optgroup label="Digital">
+                <option value="design">Design</option>
+                <option value="programming">Programming</option>
+                <option value="business">Business</option>
+              </optgroup>
+            </select>
+          </div>
+          <div>
+            <label for="comments"> Any comments or concerns? </label>
+            <br>
+            <br>
+            <textarea name="comments" id="comments" rows="3" cols="30">Default text</textarea>
+          </div>
+          <div>
+            <button type="submit">Submit Form</button>
+            <button type="reset">Reset Form</button>
+          </div>
+        </fieldset>
+      </form>
+    </article>
+    <aside class="myright" id="newsletterMyRight">
+    </aside>
+  </section>
+  <footer class="footer">
+
+  </footer>
+</body>
+
+</html>
