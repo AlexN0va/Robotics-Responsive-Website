@@ -22,8 +22,7 @@ I have always wanted to make a website and this class gave me that opportunity. 
 This website is meant to represent a template for a website for my robotics team. When creating this website I was able to think about our team colors and the general information that we want to share with our community.
 
 ### View
-
 You can visit the responsive website here...
 https://replit.com/@SRJCEthanWilde/CS50A-Module17-55-ALexYee
 
-
+<img src="images/Screenshot 2023-05-27 135829.png" alt="screen shot of website">
